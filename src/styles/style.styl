@@ -1,0 +1,53 @@
+html
+  font-family 'Manrope', sans-serif;
+
+.gallery
+  display flex
+  height 30vh
+  width 80%
+  justify-content space-between
+  margin 0 auto
+  margin-top 5vh
+  &__picture
+    display flex
+    img
+      width 100%
+.articles
+  display flex
+  flex-direction column
+  gap 1.5em
+  width: 80%
+  margin 0 auto
+  .article
+    display flex
+    flex-direction column
+    gap 1.5em
+    &__title
+      font-size 1.5em
+
+.table
+  padding 0 5vw
+  margin 0 auto
+  margin-top 10vh
+  display flex
+  justify-content: center;
+  align-items center
+  flex-direction column
+  gap 5vh
+  &__title
+    font-size 2em
+  table, tr, th, td
+    border 1px solid black
+  th, td
+    padding 1em
+  th
+    background aqua
+
+@media (max-width: 800px)
+  .table
+    overflow-x scroll
+    align-items start
+  .gallery
+    height auto
+    gap 5vh
+    flex-direction column

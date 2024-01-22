@@ -1,0 +1,36 @@
+header
+  background-color: #808080
+  .&__container
+    display flex
+    justify-content space-between
+    align-items center
+    padding 1em 10vw
+  .logo__text
+    color white
+    font-size 1.5em
+    font-weight bold
+body
+  min-height 100%
+nav
+  flex-basis 50%
+  display flex
+  justify-content space-between
+  .&__link
+    color white
+    &:hover
+      text-decoration underline
+
+@media (max-width: 800px)
+  header
+    .&__container
+      flex-direction column
+      align-items start
+      gap 1em
+    .logo__text
+      font-size 1.2em
+  nav
+    align-items center
+    justify-content start
+    gap 1em
+    flex-basis auto
+    flex-direction column
